@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import '../styles/home.css';
 import logo from '/assets/image-removebg-preview 1.png';
 import Header from '../components/header/header';  
 

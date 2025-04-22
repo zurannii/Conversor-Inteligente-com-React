@@ -1,4 +1,4 @@
-import './sobre.css';
+import '../styles/sobre.css';
 import Header from '../components/header/header';  
 
 const Sobre: React.FC = () => {
