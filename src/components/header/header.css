@@ -1,0 +1,45 @@
+/* Home.css */
+.home-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 88px; 
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #357ABD;
+  height: 88px;
+  width: 100%; 
+  padding: 0 20px; 
+  position: fixed; 
+  top: 0;
+  right: 0; 
+  z-index: 1000; 
+}
+
+.header-left a {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 120px;
+}
+
+.header-right {
+  margin: 80px;
+}
+
+.header-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  margin: 30px;
+  font-weight: 600
+}
+
+.header-right a:hover {
+  color: #c7d9ed;
+}
+
