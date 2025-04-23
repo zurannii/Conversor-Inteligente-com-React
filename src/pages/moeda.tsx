@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card } from "../components/cards/cards";
 import { Input } from "../components/inputs";
+import "../styles/moeda.css"; 
 
 export const CurrencyConverter = () => {
   const exchangeRate = 5.12; 
@@ -17,25 +18,30 @@ export const CurrencyConverter = () => {
   }, [real, dollar, updating]);
 
   return (
-    <Card title="Conversor de Moeda">
-      <Input
-        label="Reais (R$)"
-        value={real}
-        unit="BRL"
-        onChange={(value) => {
-          setUpdating("real");
-          setReal(value);
-        }}
-      />
-      <Input
-        label="Dólares (US$)"
-        value={dollar}
-        unit="USD"
-        onChange={(value) => {
-          setUpdating("dollar");
-          setDollar(value);
-        }}
-      />
-    </Card>
+    <div className="currency-page">
+      <Card title="Conversor de Moeda">
+        <div className="inputs-wrapper">
+          <Input
+            label="Reais (R$)"
+            value={real}
+            unit="BRL"
+            onChange={(value) => {
+              setUpdating("real");
+              setReal(value);
+            }}
+          />
+          <Input
+            label="Dólares (US$)"
+            value={dollar}
+            unit="USD"
+            onChange={(value) => {
+              setUpdating("dollar");
+              setDollar(value);
+            }}
+          />
+        </div>
+      </Card>
+    </div>
   );
 };
+
