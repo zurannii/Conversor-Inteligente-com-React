@@ -1,17 +1,32 @@
 import { useState } from "react";
+import '../styles/medida.css';
 import { Card } from "../components/cards/cards";
 import { Input } from "../components/inputs/inputs";
+import Header from '../components/header/header';
 
 export const DistanceConverter = () => {
   const [metro, setMetro] = useState(1);
-  const centimetro = metro * 100;
-  const milimetro = metro * 1000;
+  const pe = metro * 3.28084;
+  const polegada = metro * 39.3701;
 
   return (
-    <Card title="Conversor de Medidas">
-      <Input label="Metro (m)" value={metro} onChange={setMetro} unit="m" />
-      <Input label="Centímetro (cm)" value={centimetro.toFixed(2)} onChange={(v) => setMetro(v / 100)} unit="cm" />
-      <Input label="Milímetro (mm)" value={milimetro.toFixed(2)} onChange={(v) => setMetro(v / 1000)} unit="mm" />
-    </Card>
+    <div className="page-container">
+      <Header />
+      <Card title="Conversor de Medidas">
+        <Input label="Metro (m)" value={metro} onChange={setMetro} unit="m" />
+        <Input
+          label="Pé (ft)"
+          value={pe.toFixed(2)}
+          onChange={(v) => setMetro(v / 3.28084)}
+          unit="ft"
+        />
+        <Input
+          label="Polegada (in)"
+          value={polegada.toFixed(2)}
+          onChange={(v) => setMetro(v / 39.3701)}
+          unit="in"
+        />
+      </Card>
+    </div>
   );
 };
