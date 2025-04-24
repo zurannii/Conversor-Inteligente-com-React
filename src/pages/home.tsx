@@ -11,9 +11,9 @@ const Home: React.FC = () => {
         <h1>Bem-vindo ao Conversor Inteligente</h1>
         <p>Este aplicativo simples e direto permite converter dólar para real, temperaturas e medidas com atualização automática. Escolha uma opção abaixo:</p>
         <div className="buttons">
-          <a href="/moeda">Conversor de Moeda</a>
-          <a href="/temperatura">Conversor de Temperatura</a>
-          <a href="/medidas">Conversor de Medidas</a>
+        <a href="/conversor-moeda">Conversor de Moeda</a>
+        <a href="/conversor-temperatura">Conversor de Temperatura</a>
+        <a href="/conversor-distancia">Conversor de Medidas</a>
         </div>
       </div>
       <img className="home-image" src={logo} alt="Ilustração do app" />

@@ -11,9 +11,9 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
-        <Route path="/conversor-moeda" element={<CurrencyConverter />} />
-        <Route path="/conversor-temperatura" element={<TemperatureConverter />} />
-        <Route path="/conversor-distancia" element={<DistanceConverter />} />
+        <Route path="/moedas" element={<CurrencyConverter />} />
+        <Route path="/temperaturas" element={<TemperatureConverter />} />
+        <Route path="/DistanceConverter" element={<DistanceConverter />} />
       </Routes>
     </BrowserRouter>
   );
